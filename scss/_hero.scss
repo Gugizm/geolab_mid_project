@@ -1,28 +1,42 @@
 .index-main {
-  margin-top: 8px;
   display: flex;
   height: 829px;
+  align-items: flex-start;
 
   .left-slider {
     max-width: 400px;
+    height: 830px;
     width: 100%;
+    border: 2px red solid;
 
-    .slider-texr-are {
-      height: 550px;
-      display: flex;
-      align-items: center;
-      text-align: center;
+    // aspect-ratio: 770/829;
 
-      p {
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 64px;
-        color: rgb(59, 99, 179);
-      }
-    }
+    // .slider-texr-are {
+    //   padding: 0px 20px;
+    //   height: 550px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   text-align: center;
+
+    //   h1 {
+    //     font-size: 48px;
+    //     font-weight: 600;
+    //     line-height: 64px;
+    //     color: $secondaryColor;
+    //   }
+    //   p {
+    //     margin-top: 20px;
+    //     font-size: 16px;
+    //     font-weight: 400;
+    //     line-height: 21px;
+    //     color: $secondaryColor;
+    //   }
+    // }
     .slider-arrow {
       display: flex;
       align-items: center;
+      margin-top: 556px;
 
       .squar {
         width: 53px;
@@ -60,12 +74,12 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 24px;
-        color: rgba(189, 189, 189, 1);
+        color: $secondaryColor;
       }
       .counter-spliter {
         width: 46px;
         height: 2px;
-        background-color: rgba(189, 189, 189, 1);
+        background-color: $secondaryColor;
         transform: rotate(-45deg);
       }
     }
@@ -73,38 +87,26 @@
   .right-slider {
     max-width: 770px;
     width: 100%;
+    max-height: 830x;
+    height: 100%;
     background-image: url(../images/cover.png);
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    background-size: cover;
+    aspect-ratio: 770/830;
 
     .slider-btn {
       position: absolute;
-      width: 222px;
-      height: 71px;
-      border: none;
       left: 0px;
       bottom: 0px;
-      padding: 24px 50px 24px 20px;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 12px;
-      background-color: rgba(255, 255, 255, 1);
-      background-image: url(../images/arrow-right.svg);
-      background-repeat: no-repeat;
-      background-position: center right 30px;
-      cursor: pointer;
-      transition: 0.5s ease;
-
-      &:hover {
-        background-color: rgba(242, 242, 242, 1);
-      }
     }
   }
 }
 
 @media (max-width: 768px) {
   .index-main {
+    // align-items: flex-start;
     .left-slider {
       display: none;
     }
