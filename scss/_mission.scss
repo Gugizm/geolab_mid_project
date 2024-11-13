@@ -1,0 +1,42 @@
+.mission {
+  margin-top: 120px;
+  min-height: 288px;
+
+  h3 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $secondaryColor;
+  }
+
+  .mission-content {
+    // margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    .mis-content {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mission {
+    margin-top: 5%;
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .mission-content {
+      flex-wrap: wrap;
+      .mis-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+      }
+    }
+  }
+}

@@ -1,46 +1,50 @@
 .about-us-container {
-  height: 465px;
+  margin-top: 120px;
+  min-height: 465px;
   width: 100%;
 
   .inside-area {
     width: 100%;
-    min-height: 435px;
     background-color: $backgroundColor;
     padding: 30px 70px 0px 100px;
     display: flex;
+    border: 2px red solid;
 
     .img-wrapper {
-      position: relative;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      column-gap: 30px;
       max-width: 600px;
       width: 100%;
 
-      .img-1 {
-        width: 270px;
-        height: 265px;
-        background-image: url("../images/cover-2-1.png");
-        background-repeat: no-repeat;
-        position: absolute;
+      .left-about-img {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        .ab-img-1 {
+          max-width: 270px;
+          width: 100%;
+          height: 265px;
+          max-height: 100%;
+        }
+        .ab-img-2 {
+          max-width: 270px;
+          width: 100%;
+          height: 140px;
+          max-height: 100%;
+          margin-bottom: -30px;
+        }
       }
-      .img-2 {
-        width: 270px;
-        height: 140px;
-        background-image: url("../images/cover-2-3.png");
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: -30px;
-      }
-      .img-3 {
-        width: 270px;
-        height: 345px;
-        background-image: url("../images/cover-2-2.png");
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 30px;
-        right: 30px;
+      .right-about-img {
+        margin-top: 30px;
+        img {
+          max-width: 100%;
+        }
       }
     }
     .about-text-area {
-      width: 400px;
+      max-width: 400px;
       display: flex;
       flex-direction: column;
       row-gap: 20px;
@@ -63,32 +67,39 @@
   }
 }
 
+@media (max-width: 1150px) {
+  .about-us-container {
+    margin-top: 5%;
+    .inside-area {
+      justify-content: center;
+      flex-wrap: wrap;
+      .img-wrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .left-about-img {
+          display: none;
+        }
+      }
+      .about-text-area {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .about-us-container {
     .inside-area {
       .img-wrapper {
         display: flex;
         align-items: center;
-        // justify-content: center;
-        .img-3 {
-          position: static;
-          //   display: none;
+        .right-about-img {
+          img {
+            display: none;
+          }
         }
-        .img-1 {
-          display: none;
-        }
-        .img-2 {
-          display: none;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 500px) {
-  .about-us-container {
-    .inside-area {
-      .img-wrapper {
-        display: none;
       }
     }
   }

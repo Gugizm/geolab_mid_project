@@ -1,11 +1,11 @@
 .index-main {
   display: flex;
-  height: 829px;
+  max-height: 829px;
   // align-items: flex-start;
 
   .left-slider {
     max-width: 400px;
-    height: 830px;
+    // height: 830px;
     width: 100%;
 
     .slider-arrow {
@@ -60,13 +60,20 @@
     }
   }
   .right-slider {
-    background-image: url(../images/cover.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    max-width: 770px;
+    width: 100%;
+    // max-height: 829px;
     position: relative;
-    background-size: cover;
-    aspect-ratio: 770/830;
-
+    .cover {
+      width: 100%;
+      height: 100%;
+      border: 2px red solid;
+      background-image: url(../images/cover.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      aspect-ratio: 770/830;
+    }
     .slider-btn {
       position: absolute;
       left: 0px;
@@ -77,7 +84,7 @@
 
 @media (max-width: 768px) {
   .index-main {
-    // align-items: flex-start;
+    align-items: flex-start;
     .left-slider {
       display: none;
     }
