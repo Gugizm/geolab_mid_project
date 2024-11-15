@@ -1,0 +1,54 @@
+.about {
+  .about-content {
+    .about-cover {
+      margin-top: 70px;
+      max-width: 1170px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      margin: 50px 0px 30px 0px;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 64px;
+      color: $primaryColor;
+    }
+    .about-desc {
+      display: flex;
+      justify-content: space-between;
+      .about-text {
+        max-width: 612px;
+        width: 100%;
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+      .about-img {
+        max-width: 504px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    .about-content {
+      h1 {
+        text-align: center;
+      }
+      .about-desc {
+        justify-content: center;
+        .about-img {
+          display: none;
+        }
+      }
+    }
+  }
+}
