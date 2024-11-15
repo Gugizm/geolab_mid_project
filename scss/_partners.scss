@@ -1,0 +1,32 @@
+.partners-content {
+  margin-top: 15px;
+
+  .partners {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  .par-next {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+    .slider-arrow {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners-content {
+    .par-next {
+      justify-content: center;
+    }
+  }
+}
