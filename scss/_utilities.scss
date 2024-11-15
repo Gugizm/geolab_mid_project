@@ -13,17 +13,17 @@ button {
   font-family: "BPG Banner Caps", sans-serif;
 }
 
-.white-btn {
+.white-btn,
+.trans-btn,
+.blue-btn {
   width: 222px;
   height: 71px;
   border: none;
-  padding: 24px 50px 24px 20px;
+  padding: 27px 50px 24px 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 1px;
-  color: $primaryColor;
-  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center right 30px;
@@ -35,46 +35,86 @@ button {
   }
 }
 
+.white-btn {
+  color: $primaryColor;
+  background-color: rgba(255, 255, 255, 1);
+  &:hover {
+    background-color: rgba(242, 242, 242, 1);
+  }
+}
+
 .trans-btn {
-  width: 222px;
-  height: 71px;
-  border: none;
-  padding: 24px 50px 24px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 1px;
   color: rgba(255, 255, 255, 1);
   background-color: transparent;
-  background-image: url(../images/white-btn-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center right 30px;
-  cursor: pointer;
-  transition: 0.5s ease;
-
   &:hover {
     background-color: $primaryColor;
   }
 }
 .blue-btn {
-  width: 222px;
-  height: 71px;
-  border: none;
-  padding: 24px 50px 24px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 1px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(20, 60, 142, 1);
-  background-image: url(../images/white-btn-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center right 30px;
+  background-color: rgb(79, 128, 226);
+
+  &:hover {
+    background-color: $primaryColor;
+  }
+}
+
+.second-header {
+  height: 57px;
+  background-color: rgba(221, 233, 247, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+
+  img {
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 64px;
+    color: rgba(20, 60, 142, 1);
+  }
+}
+
+.squar {
+  width: 53px;
+  height: 53px;
+  border: 1px rgba(242, 242, 242, 1) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
   transition: 0.5s ease;
 
   &:hover {
-    background-color: $primaryColor;
+    background-color: rgba(242, 242, 242, 1);
+  }
+}
+
+.left-arrow {
+  background-color: rgba(255, 255, 255, 1);
+  margin-right: 23px;
+}
+
+.slider-count {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $secondaryColor;
+  }
+  .counter-spliter {
+    width: 46px;
+    height: 2px;
+    background-color: $secondaryColor;
+    transform: rotate(-45deg);
   }
 }
 

@@ -1,24 +1,6 @@
 .services-main {
   margin-top: 15px;
-  .ser-main-header {
-    height: 57px;
-    background-color: rgba(221, 233, 247, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 18px;
 
-    img {
-      margin-top: 5px;
-    }
-
-    h3 {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 64px;
-      color: rgba(20, 60, 142, 1);
-    }
-  }
   .services-content {
     margin-top: 40px;
     .service-card {
