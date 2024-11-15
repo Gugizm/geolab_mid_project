@@ -1,10 +1,10 @@
 .about-us-container {
   margin-top: 120px;
-  min-height: 465px;
   width: 100%;
 
   .inside-area {
     width: 100%;
+    min-height: 465px;
     background-color: $backgroundColor;
     padding: 30px 70px 0px 100px;
     display: flex;
@@ -66,11 +66,12 @@
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .about-us-container {
-    margin-top: 5%;
+    margin-top: 10%;
     .inside-area {
       justify-content: center;
+      padding: 0;
       flex-wrap: wrap;
       .img-wrapper {
         width: 40%;
@@ -79,6 +80,9 @@
         justify-content: center;
         .left-about-img {
           display: none;
+        }
+        .right-about-img {
+          margin: 0;
         }
       }
       .about-text-area {
@@ -92,13 +96,7 @@
   .about-us-container {
     .inside-area {
       .img-wrapper {
-        display: flex;
-        align-items: center;
-        .right-about-img {
-          img {
-            display: none;
-          }
-        }
+        display: none;
       }
     }
   }

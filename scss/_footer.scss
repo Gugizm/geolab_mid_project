@@ -1,7 +1,8 @@
 footer {
   background-color: rgba(20, 60, 142, 1);
-  height: 250px;
+  max-height: 250px;
   padding: 35px 0px 25px 0px;
+  margin-top: 120px;
 
   .footer-content {
     .footer-main-content {
@@ -37,12 +38,12 @@ footer {
       .soc-media {
         display: flex;
         column-gap: 24px;
-        align-items: center;
+        // align-items: center;
       }
     }
     .footer-rights {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       margin-top: 26px;
       color: rgba(255, 255, 255, 1);
       font-size: 14px;
@@ -52,6 +53,11 @@ footer {
   }
 }
 
+@media (max-width: 1200px) {
+  footer {
+    margin-top: 10%;
+  }
+}
 @media (max-width: 768px) {
   footer {
     .footer-content {
@@ -66,6 +72,7 @@ footer {
     }
   }
 }
+
 @media (max-width: 500px) {
   footer {
     .footer-content {

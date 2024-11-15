@@ -1,10 +1,10 @@
 .projects {
-  min-height: 765px;
-  height: 100%;
+  // min-height: 765px;
   margin-top: 120px;
+  // height: 100%;
 
   h3 {
-    font-size: 58px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 64px;
     color: $secondaryColor;
@@ -16,10 +16,6 @@
     justify-content: space-between;
 
     .pro-detail {
-      max-width: 570px;
-      width: 100%;
-      max-height: 255px;
-      height: 100%;
       position: relative;
 
       &::before {
@@ -51,24 +47,11 @@
         width: 100%;
 
         h4 {
-          font-size: 44px;
-          font-weight: 700;
+          font-size: 30px;
+          font-weight: 500;
           line-height: 64px;
           color: rgba(255, 255, 255, 1);
         }
-      }
-    }
-    .pro-detail-right {
-      max-width: 570px;
-      width: 100%;
-      max-height: 255px;
-      height: 100%;
-
-      img {
-        max-width: 570px;
-        width: 100%;
-        max-height: 255px;
-        height: 100%;
       }
     }
   }
@@ -82,13 +65,6 @@
       width: 100%;
       max-height: 255px;
       height: 100%;
-
-      img {
-        max-width: 270px;
-        width: 100%;
-        max-height: 255px;
-        height: 100%;
-      }
     }
 
     .pro-img-2 {
@@ -96,13 +72,6 @@
       width: 100%;
       max-height: 255px;
       height: 100%;
-
-      img {
-        max-width: 470px;
-        width: 100%;
-        max-height: 255px;
-        height: 100%;
-      }
     }
 
     .pro-img-3 {
@@ -110,15 +79,9 @@
       width: 100%;
       max-height: 255px;
       height: 100%;
-
-      img {
-        max-width: 370px;
-        width: 100%;
-        max-height: 255px;
-        height: 100%;
-      }
     }
   }
+
   .see-all {
     margin-top: 30px;
     display: flex;
@@ -126,6 +89,22 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .projects {
+    margin-top: 10%;
+    .pro-frow {
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: center;
+    }
+    .pro-srow {
+      display: none;
+    }
+    .see-all {
+      justify-content: center;
+    }
+  }
+}
 @media (max-width: 768px) {
   .projects {
     margin-top: 5%;
