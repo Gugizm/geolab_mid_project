@@ -13,6 +13,8 @@
       display: flex;
       flex-direction: column;
       row-gap: 10px;
+      max-width: 391px;
+      width: 100%;
 
       .contact-input,
       textarea {
@@ -24,7 +26,6 @@
         letter-spacing: 0.04em;
         color: rgba(141, 141, 141, 1);
         outline: none;
-        width: 391px;
       }
 
       .contact-input {
@@ -37,7 +38,6 @@
 
       .contact-send-btn {
         margin-top: 10px;
-        width: 391px;
         height: 42px;
         border: none;
         padding-top: 5px;
