@@ -1,0 +1,77 @@
+.contact {
+  .second-header {
+    img {
+      margin-bottom: 5px;
+    }
+  }
+  .contact-content {
+    margin-top: 93px;
+    display: flex;
+    justify-content: space-between;
+
+    .input-area {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      .contact-input,
+      textarea {
+        border: none;
+        background-color: rgba(243, 243, 243, 1);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        letter-spacing: 0.04em;
+        color: rgba(141, 141, 141, 1);
+        outline: none;
+        width: 391px;
+      }
+
+      .contact-input {
+        padding: 16px 0px 13px 21px;
+        height: 46px;
+      }
+      textarea {
+        padding: 14px 0px 0px 16px;
+      }
+
+      .contact-send-btn {
+        margin-top: 10px;
+        width: 391px;
+        height: 42px;
+        border: none;
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.5s ease;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgb(79, 128, 226);
+
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+    }
+    .map {
+      max-width: 630px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact {
+    .contact-content {
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: center;
+    }
+  }
+}
